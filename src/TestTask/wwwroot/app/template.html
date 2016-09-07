@@ -1,0 +1,25 @@
+﻿<table>
+    <thead>
+        <tr>
+            <td>Less 10Mb</td>
+            <td>10Mb-50Mb</td>
+            <td>More 100Mb</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td *ngFor="let item of fileSizes">{{item}}</td>
+        </tr>
+    </tbody>
+</table>
+<p class="path"><span class="bold-span">Current path:</span> {{dirPath}}</p>
+
+<div class="directory">
+    <a (click)="parent()">..</a>
+    <div *ngFor="let item of folders">
+        <a (click)="folderClick([item])"> {{item}}</a>
+    </div>
+    <div *ngFor="let item of files">
+        <p> {{item}}</p>
+    </div>
+</div>

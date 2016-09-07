@@ -1,0 +1,39 @@
+﻿<html>
+
+<head>
+    <title>ASP.NET Core: AngularJS 2 Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills -->
+    <script src="/js/es6-shim.min.js"></script>
+    <script src="/js/system-polyfills.js"></script>
+    <!-- Angular2 libraries -->
+    <script src="/js/angular2-polyfills.js"></script>
+    <script src="/js/system.src.js"></script>
+    <script src="/js/Rx.js"></script>
+    <script src="/js/angular2.dev.js"></script>
+    <script src="/js/http.dev.js"></script>
+    <!-- Bootstrap via SystemJS -->
+    <script>
+
+        System.config
+        ({
+            packages:
+            {
+                "app":
+                {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/boot').then(null, console.error.bind(console));
+    </script>
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Application PlaceHolder -->
+    <app>Please wait...</app>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["data.js"],"names":["System","register","a","b","c","id","setters","execute"],"mappings":"AAAAA,OAAOC,YAAY,SAASC,EAAEC,GAAG,YAAa,IAAIC,EAAE,OAAOD,IAAGA,EAAEE,IAAIC,WAAWC,QAAQ,WAAWH,EAAE,WAAW,QAASF,MAAK,MAAOA,MAAKA,EAAE,OAAOE","file":"data.js"}
